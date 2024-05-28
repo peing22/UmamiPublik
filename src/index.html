@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umami</title>
+    <!-- Länkar in CSS -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+
+            <!-- Bild -->
+            <div id="header-img-logo">
+                <picture>
+                    <source type="image/jpg" media="(min-width: 601px)" srcset="images/header-large.jpg" width="1920"
+                        height="480">
+                    <source type="image/jpg" media="(max-width: 600px)" srcset="images/header-small.jpg" width="600"
+                        height="150">
+                    <img src="images/header-large.jpg" alt="Restaurangmat" width="1920" height="480">
+                </picture>
+
+                <!-- Logotyp -->
+                <h1><a href="index.html" id="logo">Umami</a></h1>
+            </div>
+
+            <!-- Sidhuvud -->
+            <header>
+
+                <!-- Navigeringsmeny -->
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="#umami" id="umami-link">Umami</a></li>
+                        <li><a href="#meny" id="menu-link">Meny</a></li>
+                        <li><a href="#boka" id="reservation-link">Boka</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- Huvudinnehåll -->
+            <main>
+
+                <!-- Presentation -->
+                <article id="presentation">
+                    <h2>Umami</h2>
+                    <div id="presentation-content"></div>
+                </article>
+
+                <!-- Meny -->
+                <section id="menu">
+                    <h2>Meny</h2>
+                    <div class="grid-container">
+                        <div class="grid-item-1">
+                            <h3>Förrätt</h3>
+                            <div id="starter"></div>
+                        </div>
+                        <div class="grid-item-2">
+                            <h3>Varmrätt</h3>
+                            <div id="main-course"></div>
+                        </div>
+                        <div class="grid-item-3">
+                            <h3>Dessert</h3>
+                            <div id="dessert"></div>
+                        </div>
+                        <div class="grid-item-4">
+                            <h3>Dryck</h3>
+                            <div id="drinks"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Bokning -->
+                <section id="reservation">
+                    <h2>Boka</h2>
+                    <p>Välkommen att boka bord för dig och ditt sällskap! Genom att använda bokningsformuläret samtycker
+                        du till att vi sparar dina kontaktuppgifter fram till och med ditt besök hos oss.
+                    </p>
+
+                    <!-- Formulär -->
+                    <form id="reservation-form">
+                        <label for="name">Namn:</label><br>
+                        <input type="text" name="name" id="name"><br>
+                        <div class="reservation-messages" id="name-message"></div><br>
+                        <label for="phone">Telefonnummer:</label><br>
+                        <input type="text" name="phone" id="phone"><br>
+                        <div class="reservation-messages" id="phone-message"></div><br>
+                        <label for="date">Datum:</label><br>
+                        <input type="date" name="date" id="date"><br>
+                        <div class="reservation-messages" id="date-message"></div><br>
+                        <label for="time">Tid:</label><br>
+                        <input type="time" name="time" id="time"><br>
+                        <div class="reservation-messages" id="time-message"></div><br>
+                        <label for="people">Antal personer:</label><br>
+                        <select name="people" id="people">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select><br><br>
+                        <input type="submit" id="reservation-btn" value="Boka">
+                        <div class="reservation-messages" id="confirm-message"></div>
+                    </form>
+                </section>
+            </main>
+        </div>
+
+        <!-- Sidfot -->
+        <footer>
+            <div id="opening-hours">
+                <p>Öppettider</p>
+                <ul>
+                    <li>Vardag 16.00 - 21.00</li>
+                    <li>Helg 12.00 - 23.30</li>
+                </ul>
+            </div>
+            <div id="contact">
+                <p>Kontakt</p>
+                <ul>
+                    <li><a href="mailto:pein2200@student.miun.se">kontakt@umami.se</a></li>
+                    <li><a href="tel:+4670-2450045">070-245 00 45</a></li>
+                </ul>
+            </div>
+            <div id="adress">
+                <p>Adress</p>
+                <ul>
+                    <li>Restaurang Umami</li>
+                    <li> Hamnplan 34, Örebro</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
