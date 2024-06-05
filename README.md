@@ -1,4 +1,4 @@
-# DT173G Projekt - Publik webbplats
+# Umami (publik webbplats)
 Detta repo innehåller filer för att utveckla en webbplats med hjälp av en automatiserad arbetsprocess. Förutom verktygen Node.js och Node Package Manager (NPM) används Gulp som en task runner för att utföra olika steg i den automatiserade arbetsprocessen. Därtill har flera olika plugin installerats:
 
 * Gulp-typescript används för att transpilera TypeScript till JavaScript (es5).
